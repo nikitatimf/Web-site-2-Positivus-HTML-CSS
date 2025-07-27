@@ -4,6 +4,7 @@ body{
     font-size: 15px;
     line-height: 1.6;
     color: #000;
+    overflow-x: hidden;
 }
 
 h1{
@@ -29,6 +30,7 @@ h3{
 
 h4{
     font-size: 20px;
+    font-weight: 500;
     margin: 0;
 }
 
@@ -38,6 +40,13 @@ p{
     line-height: 1.28;
 }
 
+hr{
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    border: 0;
+    margin: 28px 0;
+}
 
 /* Container */
 .container{
@@ -67,10 +76,21 @@ p{
     height: 68px;
 }
 
+.header--footer{
+    width: 100%;
+    max-width: 1121px;
+    margin: 0 auto;
+}
+
 .header__inner{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.header__inner--footer{
+    margin-top: 55px;
 }
 
 .header__logo{
@@ -83,8 +103,22 @@ p{
     height: auto;
 }
 
+.header__logo--footer img{
+    display: inline-block;
+    width: 180px;
+    height: auto;
+}
 
-/* navigation */
+.header__img{
+    margin-right: 20px;
+}
+
+.header__img:last-child{
+    margin: 0;
+}
+
+
+/* Navigation */
 .nav__link{
     text-decoration: none;
     color: #000;
@@ -100,6 +134,19 @@ p{
     padding: 20px 35px;
     border: #000 1px solid;
     border-radius: 15px;
+}
+
+.nav__link--click--footer{
+    border-color: #fff;
+    font-weight: 400;
+}
+
+.nav__link--footer{
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
 
 
@@ -150,7 +197,6 @@ p{
 /* Logo */
 .logos{
     height: 48px;
-    margin-bottom: 139px;
 }
 
 .logo{
@@ -165,24 +211,39 @@ p{
 }
 
 
-/* Services */
-.services__widgets{
-    margin-top: 51px;
+/* Beggining */
+.beginning{
+    margin-top: 140px;
+    margin-bottom: 80px;
 }
 
-.services__beginning__title{
+.beginning--testimonials{
+    margin-top: 100px;
+}
+
+.beginning__title{
     display: inline-block;
     padding: 0 7px;
     background-color: #B9FF66;
     border-radius: 10px;
 }
 
-.services__beginning__suptitle{
+.beginning__suptitle{
     display: inline-block;
     width: 48%;
     margin-left: 40px;
 }
 
+.beginning__suptitle--testimonials{
+    width: 39%;
+}
+
+.beginning__suptitle--contact{
+    width: 323px;
+}
+
+
+/* Services */
 .services__widgets__lines{
     display: flex;
     justify-content: space-between;
@@ -275,4 +336,516 @@ p{
     padding: 0;
     margin-right: 50px;
     width: 210px;
+}
+
+
+/* Banner */
+.banner{
+    margin-top: 146px;
+}
+
+.banner__area{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 347px;
+    background-color: #f3f3f3;
+    border-radius: 50px;
+
+    border-top: 1px solid transparent;
+}
+
+.banner__info{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 60px;
+    height: 227px;
+    width: 500px;
+}   
+
+.banner__btn{
+    font-size: 20px;
+    font-family: "Space Grotesk", sans-serif;
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 35px;
+    border-radius: 15px;
+    background-color: #191A23;
+}
+
+.banner__btn--team{
+    display: inline-block;
+    margin-right: 0;
+    padding: 20px 78px;
+}
+
+
+/* Cases */
+.cases__area{
+    display: 
+    flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+
+    width: 100%;
+    height: 326px;
+    background-color: #000;
+    border-radius: 50px;
+}
+
+.cases__all{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 23%;
+    margin: 0 64px;
+}
+
+.cases__info{
+    width: 100%;
+}
+
+.cases__all::after{
+    position: absolute;
+    content: "";
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 186px;
+    background-color: #fff;
+    right: -23%;
+
+}
+
+.cases__all:last-child::after{
+    display: none;
+}
+
+.cases__all:first-child{
+    margin-left: 60px;
+}
+
+.cases__all:last-child{
+    margin-right: 60px;
+}
+
+.cases__text{
+    color: #fff;
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+
+.cases__btn{
+    color: #B9FF66;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+/* Work */
+.work__lines{
+    display: flex;
+    align-items: center;
+    height: 159px;
+    background-color: #f3f3f3;
+    border-radius: 50px;
+    border: 1px solid #000;
+    box-shadow: 0 5px 0 0 rgba(0, 0, 0, 1);
+    margin-bottom: 30px;
+}
+
+.work__info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 60px;
+}
+
+.work__num{
+    font-size: 60px;
+    font-weight: 500;
+    margin-right: 25px ;
+}
+
+.work__text{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+
+/* Team */
+.team__row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+
+.team__unit{
+    width: 31%;
+    height: 331px;
+    border: 1px solid #000;
+    border-radius: 50px;
+    box-shadow: 0 5px 0 0 rgba(0, 0, 0, 1);
+}
+
+.team__info{
+    width: 82%;
+    margin: 0 auto;
+    margin-top: 40px;
+
+}
+
+.team__title{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.team__title__text{
+    margin-top: auto;
+    margin-left: 20px;
+}
+
+.team__share{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.team__share img{
+    display: block;
+    width: 34px;
+    height: 34px;
+}
+
+.team__btn{
+    text-align: right;
+}
+
+
+/* Testimonials */
+.slider{
+    height: 625px;
+    border-radius: 50px;
+    background-color: #191A23;
+    overflow: hidden;
+}
+
+.slider__area{
+    height: 473px;
+    margin-top: 84px;
+    position: relative;  
+}
+
+.slider__cards{
+    display: flex;
+    flex-direction: row;
+    
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider__card{
+    margin-right: 50px;
+}
+
+.slider__card:last-child{
+    margin-right: 0;
+}
+
+.slider__fig{
+    position: relative;
+    width: 606px;
+}
+
+.slider__text{
+    position: absolute;
+    top: 0;
+    color: #fff;
+    width: 82%;
+    margin: 48px 52px;
+}
+
+.slider__info{
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+.slider__info__name{
+    color: #B9FF66;
+}
+
+.slider__info__job{
+    color: #fff;
+}
+
+
+/* Fig */
+.fig{
+    width: 606px;
+    height: auto;
+}
+
+.fig:last-child{
+    margin-right: 0;
+}
+
+
+/* Navigation */
+.navigation{
+    position: absolute;
+    width: 46%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navigation__area{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation__stars{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navigation__star{
+    width: 14px;
+    height: auto;
+    margin-right: 19px;
+}
+
+.navigation__star:last-child{
+    margin-right: 0;
+}
+
+.navigation__arrow{
+    width: 14px;
+    height: auto;
+}
+
+.navigation__arrow--right{
+    position: absolute;
+    right: 0;
+}
+
+
+/* Comtact */
+.contact__block{
+    background-color: #f3f3f3;
+    border-radius: 50px;
+    height: 773px;
+    overflow: hidden;
+    margin-bottom: 200px;
+}
+
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+    margin-top: 60px;
+    margin-left: 100px;
+}
+
+.contact__form textarea{
+    resize: none;
+    height: 186px;
+}
+
+.contact__form textarea::placeholder{
+    position: absolute;
+    top: 18px;
+}
+
+.contact__form input::placeholder{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Form */
+.form__label{
+    margin-top: 25px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.form__input{
+    position: relative;
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 0 0 0 30px;
+    font-size: 18px;
+    font-weight: 400;
+    height: 55px;
+}
+
+.form__btn{
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 18px;
+    border-radius: 18px;
+    background-color: #191A23;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+/* Check */
+.check{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+input[type="radio"]{
+    cursor: pointer;
+    appearance: none;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    position: relative;
+    margin: 0;
+    margin-right: 14px;
+}
+
+input[type="radio"]:checked::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #B9FF66;
+}
+
+.check__radio__text{
+    font-size: 18px;
+    margin-right: 35px;
+}
+
+
+/* Footer */
+.footer__all{
+    background-color: #191A23;
+    height: 514px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    overflow: hidden;
+}
+
+.footer__main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1120px;
+    margin: 0 auto;
+    height: 185px;
+    margin-top: 66px;
+}
+
+.footer__suptitle{
+    color: #fff;
+    margin-top: 20px;
+}
+
+.footer__suptitle:first-child{
+    margin-top: 27px;
+}
+
+.footer__suptitle:last-child{
+    margin: 0;
+}
+
+.footer__form__area{
+    width: 57%;
+    height: 100%;
+    background-color: #292A32;
+    border-radius: 15px;
+    position: relative;
+}
+
+.footer__form{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 35px;
+}
+
+.footer__input{
+    width: 250px;
+    height: 63px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 15px; 
+    padding-left: 35px;
+    position: relative;
+}
+
+.footer__input::placeholder{
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer__btn{
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+    padding: 20.5px 35px;
+    background-color: #B9FF66;
+    border-radius: 15px;
+    margin-bottom: auto;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+.footer__hr{
+    width: 100%;
+    max-width: 1120px;
+    margin: 50px auto;
+    height: 1px;
+    background-color: #fff;
+}
+
+.footer__end{
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__end__link{
+    margin-left: 40px;
+    color: #fff;
 }
